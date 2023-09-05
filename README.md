@@ -1,62 +1,29 @@
-## Figma URL
+Of course! Here's a more simplified version of the README:
 
-[Reviews](https://www.figma.com/file/e8L2QiR4GVTa5cGuRpXtk3/Reviews?node-id=0%3A1&t=gcCYcePiKxnkJ9kH-1)
+---
 
-## Steps
+# React Person Navigator
 
-#### Explore Data
+**React Person Navigator** is a straightforward app that displays individual profiles. Navigate through profiles using the arrow buttons or let the app pick a random profile for you with the 'Surprise Me' button.
 
-Navigate to data.js and take a look at the data structure
+## Features:
 
-#### Import Reviews
+- Arrow buttons for sequential navigation.
+- 'Surprise Me' button for random profile selection.
 
-First, import the reviews data into your project. This data should be an array of objects, with each object representing a person's review and containing properties such as name, job, image URL, and text.
+<img width="1626" alt="Screen Shot 2023-09-06 at 0 43 25" src="https://github.com/Litalhag/reviews/assets/130139673/ee34f123-92d2-457e-86f4-ddf84f89376c">
+ <img width="1708" alt="Screen Shot 2023-09-06 at 0 51 19" src="https://github.com/Litalhag/reviews/assets/130139673/fb8ea7f1-4fda-4ae0-9228-026453ad6e16">
 
-#### Setup State Value (Index)
+## Acknowledgments:
 
-Then, set up a state value that controls which person from the list is displayed.
+Created with guidance from a Udemy code-along lecture. A big thanks to the instructor for the valuable lessons.
 
-#### React Icons (Optional)
+## Usage:
 
-[Docs](https://react-icons.github.io/react-icons/)
+- Launch the app.
+- Use arrow buttons to navigate between profiles.
+- Click 'Surprise Me' for a random profile.
 
-```sh
-npm install react-icons --save
-```
+---
 
-App.jsx
-
-```js
-import { FaBeer } from 'react-icons/fa';
-const App = () => {
-  return;
-  <div>
-    <h2>Reviews Starter</h2>;
-    <FaBeer className='beer' />
-  </div>;
-};
-```
-
-#### Render First Person
-
-To render the first person in the list, you can access the first item in the reviews array and use its properties to display the person's image (inline styles), name, job, and review text.
-
-#### Prev and Next
-
-To allow the user to cycle through the reviews, you can set up buttons to display the next and previous reviews in the list. You can do this by keeping track of the current index in the reviews array, and updating the index when the user clicks the next or previous button. You can then use the updated index to access the corresponding person's review from the reviews array.
-
-#### Random
-
-To allow the user to display a random person's review, you can set up a button with functionality to randomly select an index in the reviews array. You can then use the selected index to display the corresponding person's review.
-
-#### Extra
-
-The modulus operator in JavaScript is represented by the percent sign (%). It returns the remainder of a division operation between two numbers.
-
-Overall, the flow of the application should look something like this:
-
-- Import the reviews data into your project as an array of objects.
-- Set up the reviews data as a state variable using the useState hook.
-- Render the first person's review in the list using their image, name, job, and text properties.
-- Set up buttons to display the next and previous reviews in the list. Keep track of the current index in the reviews array and update it when the user clicks the next or previous button.
-- Set up a button to display a random person's review. This button should select a random index in the reviews array and use it to display the corresponding person's review.
+This version is concise and gets straight to the point about the app's functionality and purpose.
